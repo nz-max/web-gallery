@@ -1,0 +1,128 @@
+#title {
+  text-align: center;
+  color: #30bebe;
+}
+
+#currentPostTitle {
+  color: #2a119a;
+  font-size: 28px;
+}
+#currentPostName {
+  color: #5c92c4;
+  font-size: 28px;
+}
+
+.message {
+  background-color: #a8c6d8;
+  border: 1px solid #8cb3d7;
+  border-left: none;
+  border-right: none;
+  /* display: table; */
+  padding: 2px;
+
+  margin: 4px 0;
+
+  font-size: 20px;
+}
+.message_name {
+  font-weight: 777;
+  color: #3064be;
+  font-size: 20px;
+}
+
+.dateTime {
+  color: #4d4e50;
+  list-style: none;
+  font-size: 16px;
+}
+
+.message_arrow {
+  color: #577487;
+  float: left;
+  margin-right: 2px;
+  margin-left: 2px;
+  font-size: 20px;
+}
+
+.message_delete {
+  margin-right: 4px;
+  padding: 4px;
+
+  float: right;
+
+  text-align: right;
+
+  background-image: url("../media/delete-icon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  width: 30px;
+  height: 30px;
+
+  background-size: 90%;
+}
+
+#imageDisplayButtons {
+  text-align: center;
+}
+
+#nextImageButton {
+  padding: 10px 20px;
+  font-size: 28px;
+  border-radius: 5px;
+  color: #544f68;
+}
+#prevImageButton {
+  padding: 10px 20px;
+  font-size: 28px;
+  border-radius: 5px;
+  color: #544f68;
+}
+#deleteImageButton {
+  padding: 10px 20px;
+  font-size: 28px;
+  border-radius: 5px;
+  color: #544f68;
+}
+
+#messageButtons {
+  text-align: center;
+}
+#nextMessagesButton {
+  padding: 10px 20px;
+  font-size: 28px;
+  border-radius: 5px;
+  color: #544f68;
+}
+#prevMessagesButton {
+  padding: 10px 20px;
+  font-size: 28px;
+  border-radius: 5px;
+  color: #544f68;
+}
+
+#commentFormInput {
+  width: 300px;
+}
+
+#imageID {
+  display: none;
+}
+
+#imageDisplayButtons {
+  display: none;
+}
+
+#addCommentForm {
+  display: none;
+}
+#messageButtons {
+  display: none;
+}
+
+.message_id {
+  color: #4d4e50;
+  list-style: none;
+  font-size: 16px;
+}

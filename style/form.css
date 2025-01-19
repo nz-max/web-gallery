@@ -1,0 +1,40 @@
+#imageForm {
+  display: none;
+}
+
+.formSide {
+  background-color: #30bebe;
+  font-weight: 777;
+  border: 1px solid black;
+  padding: 0 5px;
+  font-size: 22px;
+}
+
+.formInput {
+  padding: 7px 7px 7px;
+
+  border: 1px solid grey;
+  font-size: 22px;
+
+  max-width: 90%;
+}
+
+#postButton {
+  padding: 10px 20px;
+  font-size: 28px;
+
+  border-radius: 5px;
+  color: #544f68;
+}
+
+#toggleAddImageForm {
+  text-align: center;
+}
+
+#toggleButton {
+  padding: 10px 20px;
+  font-size: 28px;
+  border-radius: 5px;
+  color: #544f68;
+  display: block;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>The Web Gallery</title>
+
+    <meta
+      name="description"
+      content="The Web Gallery is where users can share pictures and comments."
+    />
+    <meta name="keywords" content="gallery,pictures,comments" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <link href="style/body.css" rel="stylesheet" type="text/css" />
+    <link href="style/form.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="style/messages.css" rel="stylesheet" type="text/css" />
+    <link href="style/form.css" rel="stylesheet" type="text/css" /> -->
+
+    <script type="module" src="js/index.mjs"></script>
+  </head>
+  <body>
+    <header>
+      <div id="title">The Web Gallery</div>
+    </header>
+
+    <hr />
+
+    <form id="addImageForm" name="add-image">
+      <div id="toggleAddImageForm">
+        <button type="button" id="toggleButton">Add a New Image</button>
+      </div>
+
+      <table id="imageForm">
+        <tbody>
+          <tr data-type="Title">
+            <td class="formSide">Title</td>
+            <td>
+              <input
+                class="formInput"
+                id="image_title"
+                name="title"
+                type="text"
+                placeholder="Enter Title"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr data-type="URL">
+            <td class="formSide">URL</td>
+            <td>
+              <input
+                class="formInput"
+                id="image_url"
+                name="url"
+                type="text"
+                placeholder="Enter Image URL"
+                required
+              />
+            </td>
+          </tr>
+          <tr data-type="Name">
+            <td class="formSide">Name</td>
+            <td>
+              <input
+                class="formInput"
+                id="image_name"
+                name="name"
+                type="text"
+                placeholder="Enter your name"
+                required
+              />
+            </td>
+          </tr>
+          <tr data-type="Submit">
+            <td>
+              <button type="submit" id="postButton">Post</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+
+    <div id="imageDisplayButtons">
+      <hr />
+
+      <button type="button" id="prevImageButton">&lt</button>
+      <button type="button" id="nextImageButton">&gt</button>
+      <button type="button" id="deleteImageButton">Delete</button>
+    </div>
+
+    <div id="imageDisplay">
+      <input type="hidden" id="imageID" value="0" />
+
+      <div id="currentPostInfo">
+        <span id="currentPostTitle">Title</span>
+        <span id="currentPostName">John</span>
+      </div>
+      <img
+        id="currentImage"
+        src="media/1.jpg"
+        alt="The Current Image"
+        style="height: 444px; width: 444px"
+        loading="lazy"
+      />
+    </div>
+
+    <form name="add-comment" id="addCommentForm">
+      <hr />
+      <span>Add a New Comment</span>
+      <table id="commentForm">
+        <tbody>
+          <tr data-type="Name">
+            <td class="formSide">Name</td>
+            <td>
+              <input
+                class="formInput"
+                name="name"
+                type="text"
+                id="nameFormInput"
+                placeholder="Enter your name"
+                required
+              />
+            </td>
+          </tr>
+          <tr data-type="Comment">
+            <td class="formSide">Comment</td>
+            <td>
+              <textarea
+                name="comment"
+                rows="4"
+                wrap="soft"
+                class="formInput"
+                id="commentFormInput"
+                placeholder="Enter comment"
+                required
+              >
+              </textarea>
+            </td>
+          </tr>
+          <tr data-type="Submit">
+            <td>
+              <button type="submit" id="postButton">Post</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+
+    <div id="messageButtons">
+      <button type="button" id="prevMessagesButton">&lt&lt 10</button>
+      <button type="button" id="nextMessagesButton">&gt&gt 10</button>
+    </div>
+
+    <div id="messages"></div>
+  </body>
+</html>
